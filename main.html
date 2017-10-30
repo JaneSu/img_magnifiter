@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='./img_magnifiter.js'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>图片放大镜</h1>
+        <div id="img-container">
+            <img src="./图二.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            magnifiter({
+                obj: '#img-container',
+                wrapper_width: "600",
+                wrapper_height: '400'
+            });
+        }
+    </script>
+</body>
+
+</html>
